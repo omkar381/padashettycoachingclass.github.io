@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padashetty Coaching Institute</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="hello.css">
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <header class="bg-green-600 text-white py-4">
+        <h1 class="text-center text-3xl font-bold">Padashetty Coaching Institute</h1>
+        <nav class="mt-4">
+            <ul class="flex justify-center space-x-4">
+               
+            </ul>
+        </nav>
+    </header>
+
+    <header class="bg-gradient-to-r from-green-400 to-blue-500 text-white py-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- Logo Linked to Test Results -->
+            <a href="#results" class="flex items-center">
+                <img src="logo.png" alt="Logo" class="h-12 mr-2">
+                <h1 class="text-xl font-bold">Padashetty Coaching Institute</h1>
+            </a>
+    
+            <!-- Navigation Links -->
+            <nav class="text-lg">
+                <ul class="flex space-x-6">
+                    <li><a href="#" class="hover:text-gray-300">Home</a></li>
+                    <li><a href="#" class="hover:text-gray-300">Tests</a></li>
+                    <li><a href="#results" class="hover:text-gray-300">Results</a></li>
+                    <li><a href="#" class="hover:text-gray-300">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    
+    
+    
+    
+    
+    
+    <section id="home" class="py-8 bg-cover bg-center text-white" style="background-image: url('path/to/your/image.jpg');">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold">Welcome to Padashetty Coaching Institute</h2>
+            <h2 class="mt-4 text-lg">Your path to academic excellence starts here. Join us for the best coaching experience and achieve your dreams.</h2>
+        </div>
+    </section>
+
+    <section id="pdf-downloads" class="py-8 bg-white shadow-md">
+        <div class="container mx-auto">
+            <h2 class="text-2xl font-bold mb-4">PDF Downloads</h2>
+            <p>Download the necessary materials for your courses.</p>
+            <ul class="list-none mt-4">
+               <a href="Matter in our surroundings.pdf" target="_blank" class="inline-flex items-center  text-white py-2 px-4"
+                                    <img src="pdflogo.png" alt="PDF Icon" class="h-10 mr-5">
+                <br>
+                <li><a href="https://drive.google.com/file/d/10yym3I1aOPcC-mS0bxM0wCIY_vS9B--A/view" download class="text-green-600 hover:underline">Question Paper</a></li>
+                <br>
+                
+            </ul>
+        </div>
+    </section>
+
+    <section id="test-results" class="py-8 bg-gray-50 shadow-md">
+        <div class="container mx-auto">
+            <h2 class="text-2xl font-bold mb-4">Test Results</h2>
+            <p>Enter your registration number to view your test results.</p>
+            <form id="resultsForm" class="mt-4">
+                <label for="reg-number" class="block mb-2">Registration Number:</label>
+                <input type="text" id="reg-number" name="reg-number" required class="border border-gray-300 p-2 rounded w-full">
+                <button type="button" onclick="fetchResults()" class="mt-4 bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">View Results</button>
+            </form>
+            <div id="resultsDisplay" class="mt-8"></div>
+        </div>
+    </section>
+
+   <!-- Map Location Section -->
+<section id="location">
+    <h2>Our Location</h2>
+    <div id="map">
+        <!-- You can embed a Google Map iframe here -->
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15234.789557246791!2d76.8278697!3d17.3301438!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc8c7560fe3982b%3A0xed01fd4d72759d7!2sPadashetty%20Coaching%20Class!5e0!3m2!1sen!2sin!4v1718419078280!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+    </div>
+</section>
+
+
+    <footer class="bg-gray-800 text-white text-center py-4 mt-8">
+        <p>Address: sangmeshwar colony SB temple road</p>
+        <p>Phone:9945203603//8123695940</p>
+    </footer>
+
+    <script src="hello.js"></script>
+</body>
+</html>
